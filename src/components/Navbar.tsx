@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Coins, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useWallet } from '@solana/wallet-adapter-react';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 
 type NavbarProps = {
@@ -25,7 +24,7 @@ export default function Navbar({ onNavigate, currentView }: NavbarProps) {
             className="flex items-center gap-2 cursor-pointer"
             onClick={() => handleNavigate('home')}
           >
-            <Coins className="w-8 h-8 text-[#FF6F3C]" />
+            <img src="/boinkkk.webp" alt="BoinkStake Logo" className="w-24 h-24 filter brightness-0 invert" />
             <span className="text-xl font-bold text-white">BoinkkStake</span>
           </div>
           
